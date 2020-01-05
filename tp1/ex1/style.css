@@ -1,0 +1,15 @@
+
+@media only screen and (max-width: 600px) {
+}
+body{
+    background:#ddddff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0;
+}
+
+#conteneur{
+
+    padding:15px;
+}

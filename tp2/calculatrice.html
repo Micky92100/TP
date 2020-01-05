@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tp1</title>
+</head>
+
+<body>
+
+    <a href="#" onclick="unhide()">Faire apparaître la calculatrice</a>
+    /
+    <a href="#" onclick="hide()">Faire disparaître la calculatrice</a>
+
+
+
+    <div id="container">
+        <form id="calculette" action="" method="post">
+            <input type="text" onmouseenter="showMsgNumber()" onmouseleave="clearMsg()">
+            <select onmouseenter="showMsgOperator()" onmouseleave="clearMsg()">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+
+            <input type="text" onmouseenter="showMsgNumber()" onmouseleave="clearMsg()">
+            <input type="submit" value="OK" onclick="calcul()">
+
+
+
+        </form>
+        <div id="message"></div>
+
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
