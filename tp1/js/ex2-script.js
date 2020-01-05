@@ -54,9 +54,9 @@ let isContinue = confirm("Voulez-vous continuer?");
 let filePath = "";
 
 if (isContinue) {
-    filePath = "../exercice_3/exercice3.html";
+    filePath = "../tp1/exercice3.html";
 } else {
-    filePath = "../exercice_1/exercice1.html";
+    filePath = "../tp1/exercice1.html";
 }
 
 document.getElementById("links").setAttribute("href", filePath);
