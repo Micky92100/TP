@@ -2,7 +2,7 @@
 
 const ligne = document.getElementsByClassName("ligne")[0];
 ligne.style.display = "flex";
-ligne.style.flexDirection = "row";
+ligne.style.justifyContent = "space-around";
 
 /*------------------------changer les titres---------------------------*/
 
@@ -16,7 +16,6 @@ for (let i = 0; i < spans.length; i++) {
 
 let input = "";
 let colorTable = [];
-let box = document.getElementsByClassName("box")[0];
 
 while (input !== "stop") {
     input = prompt("Choisissez une couleur en anglais");
@@ -25,6 +24,9 @@ while (input !== "stop") {
     }
 }
 
+/*------------------------display des couleurs---------------------------*/
+
+let box = document.getElementsByClassName("box")[0];
 for (let i = 0; i < colorTable.length; i++) {
-    box.innerHTML += "<div style='background-color: " + colorTable[i] + "'>" + (i + 1) + "</div>";
+    box.innerHTML += `<div style='background-color: ${colorTable[i]} '>${(i + 1)}</div>`;
 }

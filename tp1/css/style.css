@@ -1,21 +1,27 @@
+/*--------------- all ------------------ */
 body {
     background: #ffffff;
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
     margin: auto 0;
     justify-content: center;
     text-align: center;
 }
 
+#container {
+    background: #ddddff;
+    padding: 15px;
+    width: 100%;
+}
+
+/*--------------- ex2 ------------------ */
+
 table {
     width: 100%;
 }
 
-#container {
-    background: #ddddff;
-    padding: 15px;
-}
+/*--------------- ex3 ------------------ */
 
 .box {
     height: 300px;
@@ -31,6 +37,5 @@ table {
 @media screen and (max-width: 768px) {
     .box > * {
         flex: 1 1 100%;
-        text-align: center;
     }
 }

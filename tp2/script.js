@@ -1,6 +1,8 @@
+const form = document.getElementById("calculette");
+const container = document.getElementById("container");
+const message = document.getElementById("message");
 
 function calcul() {
-    const form = document.getElementById("calculette");
     const a = parseFloat(form.elements[0].value);
     const b = parseFloat(form.elements[2].value);
     const x = form.elements[1].value;
@@ -36,19 +38,19 @@ function calcul() {
     alert(`${a} ${x} ${b} = ${result}`);
 }
 function unhide() {
-    document.getElementById("container").style.display = "block";
+    container.style.display = "block";
 
 }
 function hide() {
-    document.getElementById("container").style.display = "none";
+    container.style.display = "none";
 
 } function showMsgNumber() {
-    document.getElementById("message").innerText = "saisir un chiffre";
+    message.innerText = "saisir un chiffre";
 
 } function clearMsg() {
-    document.getElementById("message").innerText = "";
+    message.innerText = "";
 
 } 
 function showMsgOperator() {
-    document.getElementById("message").innerText = "selectionner un operateur : + - * / %";
+    message.innerText = "selectionner un operateur : + - * / %";
 }
