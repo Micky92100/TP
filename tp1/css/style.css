@@ -1,0 +1,17 @@
+body{
+    background:#ffffff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+}
+
+#container{
+    background:#ddddff;
+    padding:15px;
+}
