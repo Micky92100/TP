@@ -1,7 +1,7 @@
 let container = document.getElementById("container");
 container.innerHTML = "<h3>Bienvenue !<br></h3>";
 
-/*------------------------boite de dialogue---------------------------*/
+/*------------------------Question 1---------------------------*/
 
 let question = prompt("Quel est votre prénom?");
 if (question.length > 1) {
@@ -27,7 +27,7 @@ while (question2 !== "4" && question2 !== "quatre") {
     body[0].style.backgroundColor = "#9999ff";
 }
 
-/*-----------------------Question 3-------------------------------*/
+/*-----------------------Continue?-------------------------------*/
 
 let question3 = confirm("Voulez-vous continuer?");
 if (question3) {

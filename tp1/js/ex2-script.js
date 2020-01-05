@@ -18,7 +18,7 @@ function makeTable(userInput) {
 
 makeTable(nb);
 
-//////////////////////////////////////////////////////////////////
+/*------------------------fonctions carre() et cube()---------------------------*/
 
 function carre(num) {
     Math.pow(num, 2);
@@ -27,7 +27,7 @@ function cube(num) {
     Math.pow(num, 3);
 }
 
-//////////////////////////////////////////////////////////////////
+/*------------------------TVA---------------------------*/
 
 let horsTaxe = Number(prompt("Entrez un chiffre (TVA): "));
 
@@ -44,14 +44,14 @@ function fillParagraph(montantHorsTaxe) {
 
     document.getElementById("ht").innerText = horsTaxe;
 
-    let toutesTaxesComprises = horsTaxe + tva(horsTaxe);
-    document.getElementById("ttc").innerText = toutesTaxesComprises;
+    document.getElementById("ttc").innerText = horsTaxe + tva(horsTaxe);
 }
 
 fillParagraph(horsTaxe);
+
+/*------------------------Continue?---------------------------*/
 let isContinue = confirm("Voulez-vous continuer?");
 
-let filePath = "";
 
 if (isContinue) {
     filePath = "../tp1/exercice3.html";
